@@ -27,7 +27,7 @@ public class StatsServiceTest {
     @Test
     void maxSalesMonth() {
         StatsService service = new StatsService();
-        int expected = 8; // август (20 тысяч) — последний месяц с максимумом
+        int expected = 8;
         int actual = service.maxSalesMonth(sales);
         assertEquals(expected, actual);
     }
@@ -35,7 +35,7 @@ public class StatsServiceTest {
     @Test
     void minSalesMonth() {
         StatsService service = new StatsService();
-        int expected = 9; // сентябрь (7 тысяч) — последний месяц с минимумом
+        int expected = 9;
         int actual = service.minSalesMonth(sales);
         assertEquals(expected, actual);
     }
